@@ -1,0 +1,37 @@
+Font:
+Montserrat
+
+Title:
+36pt Light
+40pt character spacing
+#CCCCCC
+
+Heading:
+16pt Medium
+20pt character spacing
+#CCCCCC
+
+Link:
+16pt Medium
+20pt character spacing
+#FFB100
+
+Button label:
+24pt SemiBold
+40pt Character spacing
+
+Traveled distance header:
+48pt light
+40pt character spacing
+#CCCCCC
+
+Hints:
+12pt Light
+20pt character spacing
+##666666
+
+Textbox:
+16pt Medium
+20pt character spacing
+#666666 Placeholder
+#CCCCCC Text
