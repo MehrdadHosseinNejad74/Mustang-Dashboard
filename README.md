@@ -10,7 +10,7 @@ A beautiful mustang dashboard that consists of two pages (route).
      * Engine status : animated engine components with their status (check, ok)
      * Fuel status : fuel gauge with animated needle
 
-## Usage
+## App Design
 ![App Design](https://github.com/MehrdadHosseinNejad74/Mustang-Dashboard/blob/master/assets/concept/concept.png)
 
 ## Packages
