@@ -1,4 +1,5 @@
-import 'package:mustang_dashboard/enums/EngineComponents.dart';
+import 'package:mustang_dashboard/enums/engine_component.dart';
+import 'package:mustang_dashboard/enums/engine_status.dart';
 
 import 'engine_model.dart';
 

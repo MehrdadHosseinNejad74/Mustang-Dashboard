@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:mustang_dashboard/enums/EngineComponents.dart';
+import 'package:mustang_dashboard/enums/engine_component.dart';
+import 'package:mustang_dashboard/enums/engine_status.dart';
 import 'package:mustang_dashboard/model/car_model.dart';
 import 'package:mustang_dashboard/model/engine_model.dart';
 
