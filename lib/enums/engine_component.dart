@@ -1,7 +1,1 @@
-enum EngineComponent{
-
-  ENGINE,
-  OIL,
-  TEMP
-
-}
+enum EngineComponent { ENGINE, OIL, TEMP }

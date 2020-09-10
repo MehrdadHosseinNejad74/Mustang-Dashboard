@@ -28,7 +28,12 @@ class _StartButtonState extends State<StartButton>
     //When button animation is done then route to new page
     _buttonController.addStatusListener((status) {
       if (status == AnimationStatus.completed) {
-        Navigator.push(context, FadeRoute(page: Dashboard(car: mustang,)));
+        Navigator.push(
+            context,
+            FadeRoute(
+                page: Dashboard(
+              car: mustang,
+            )));
       }
     });
 

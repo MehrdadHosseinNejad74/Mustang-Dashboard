@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:mustang_dashboard/constant/constant.dart';
 
-
 class FordLogo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

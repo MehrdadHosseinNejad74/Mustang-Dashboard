@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import 'package:mustang_dashboard/constant/constant.dart';
 
 class InputBox extends StatelessWidget {
@@ -13,7 +12,8 @@ class InputBox extends StatelessWidget {
       {Key key,
       @required this.label,
       @required this.hintText,
-      this.secondLabel = "", this.obscureText:false})
+      this.secondLabel = "",
+      this.obscureText: false})
       : super(key: key);
 
   @override

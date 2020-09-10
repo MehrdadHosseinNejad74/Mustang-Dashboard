@@ -8,7 +8,6 @@ import 'package:mustang_dashboard/screen/dashboard/widget/car_detail.dart';
 import 'package:mustang_dashboard/screen/dashboard/widget/engine_detail.dart';
 
 class Dashboard extends StatefulWidget {
-
   final Car car;
 
   const Dashboard({Key key, @required this.car}) : super(key: key);
@@ -100,7 +99,8 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
         child: Column(
           children: [
             //Km, Image, Traveled...
-            CarDetail(car: widget.car,
+            CarDetail(
+                car: widget.car,
                 fadeAnimation: _fadeAnimation,
                 slideController: _slideController),
             //Needle, Engine, ...

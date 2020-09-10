@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mustang_dashboard/constant/constant.dart';
+
 class RegisterText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -12,11 +13,15 @@ class RegisterText extends StatelessWidget {
           text: TextSpan(children: [
             TextSpan(
               text: "Don't have an account? ",
-              style: Theme.of(context).textTheme.bodyText1.copyWith(fontSize: size.width*0.04),
+              style: Theme.of(context)
+                  .textTheme
+                  .bodyText1
+                  .copyWith(fontSize: size.width * 0.04),
             ),
             TextSpan(
               text: "Register",
-              style: Theme.of(context).textTheme.bodyText1.copyWith(fontSize: size.width * 0.04,
+              style: Theme.of(context).textTheme.bodyText1.copyWith(
+                  fontSize: size.width * 0.04,
                   color: Theme.of(context).accentColor),
             )
           ]),
