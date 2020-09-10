@@ -14,6 +14,8 @@ A beautiful mustang dashboard that consists of two pages (route).
 ![App Design](https://github.com/MehrdadHosseinNejad74/Mustang-Dashboard/blob/master/assets/concept/concept.png)
 
 > The observed lag is due to fps of gif!
+
+
 ![App Design_Gif](https://github.com/MehrdadHosseinNejad74/Mustang-Dashboard/blob/master/assets/concept/concept.gif)
 
 
