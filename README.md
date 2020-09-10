@@ -38,8 +38,7 @@ Contributions are what make the open source community such an amazing place to b
 - [Linkedin](https://www.linkedin.com/in/mehrdad-hosseinnejad)
 - [Instagram](https://www.instagram.com/mehrdad1154)
 
-
-## Flutter
+## Flutter ❤
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
