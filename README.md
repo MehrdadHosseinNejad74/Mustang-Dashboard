@@ -13,6 +13,12 @@ A beautiful mustang dashboard that consists of two pages (route).
 ## App Design
 ![App Design](https://github.com/MehrdadHosseinNejad74/Mustang-Dashboard/blob/master/assets/concept/concept.png)
 
+> The observed lag is due to the fps of gif!
+
+
+![App Design_Gif](https://github.com/MehrdadHosseinNejad74/Mustang-Dashboard/blob/master/assets/concept/concept.gif)
+
+
 ## Packages
  *  [google_fonts: ^1.1.0](https://pub.dev/packages/google_fonts/install)
  *  [flutter_svg: ^0.18.1](https://pub.dev/packages/flutter_svg/install)
