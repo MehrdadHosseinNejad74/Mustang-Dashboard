@@ -2,13 +2,13 @@
 
 A beautiful mustang dashboard that consists of two pages (route).
 * Login Page :
-    * header : beautiful cover image with  ShaderMask
-    * form : login forms and start key with sound effect
+    * header: beautiful cover image with  ShaderMask
+    * form: login forms and start key with sound effect
 
 * Dashboard Page
-     * Car specification : mileage, car model, car Image...
-     * Engine status : animated engine components with their status (check, ok)
-     * Fuel status : fuel gauge with animated needle
+     * Car specification: mileage, car model, car Image...
+     * Engine status: animated engine components with their status (check, ok)
+     * Fuel status: fuel gauge with an animated needle
 
 ## App Design
 ![App Design](https://github.com/MehrdadHosseinNejad74/Mustang-Dashboard/blob/master/assets/concept/concept.png)
