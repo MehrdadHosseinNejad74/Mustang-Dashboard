@@ -4,9 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:mustang_dashboard/constant/constant.dart';
 import 'package:mustang_dashboard/model/car_model.dart';
+import 'package:mustang_dashboard/routing/fade_route.dart';
 import 'package:mustang_dashboard/screen/dashboard/screen/dashboard_screen.dart';
-
-import '../../routing/fade_route.dart';
 
 class StartButton extends StatefulWidget {
   @override
