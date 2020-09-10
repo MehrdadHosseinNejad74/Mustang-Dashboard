@@ -7,12 +7,13 @@ class InputBox extends StatelessWidget {
   final String label;
   final String secondLabel;
   final String hintText;
+  final bool obscureText;
 
   const InputBox(
       {Key key,
       @required this.label,
       @required this.hintText,
-      this.secondLabel = ""})
+      this.secondLabel = "", this.obscureText:false})
       : super(key: key);
 
   @override
@@ -43,6 +44,7 @@ class InputBox extends StatelessWidget {
               .textTheme
               .bodyText2
               .copyWith(fontSize: size.width * 0.05, letterSpacing: 1),
+          obscureText: obscureText,
           decoration: InputDecoration(
               filled: true,
               contentPadding: EdgeInsets.all(10),
