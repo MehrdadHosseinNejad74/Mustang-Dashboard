@@ -2,10 +2,11 @@ import 'package:audioplayers/audio_cache.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:mustang_dashboard/constant/constant.dart';
+import 'package:mustang_dashboard/model/car_model.dart';
 import 'package:mustang_dashboard/screen/dashboard/screen/dashboard_screen.dart';
 
 import '../../routing/fade_route.dart';
-import '../../../constant.dart';
 
 class StartButton extends StatefulWidget {
   @override
@@ -28,7 +29,7 @@ class _StartButtonState extends State<StartButton>
     //When button animation is done then route to new page
     _buttonController.addStatusListener((status) {
       if (status == AnimationStatus.completed) {
-        Navigator.push(context, FadeRoute(page: Dashboard()));
+        Navigator.push(context, FadeRoute(page: Dashboard(car: mustang,)));
       }
     });
 

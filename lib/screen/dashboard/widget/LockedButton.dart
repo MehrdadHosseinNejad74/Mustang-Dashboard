@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:mustang_dashboard/constant/constant.dart';
 
-import '../../../constant.dart';
 
 class LockedButton extends StatelessWidget {
   const LockedButton({

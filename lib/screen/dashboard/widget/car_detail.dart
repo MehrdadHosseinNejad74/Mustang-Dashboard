@@ -1,13 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-import '../../../constant.dart';
+import 'package:mustang_dashboard/constant/constant.dart';
+import 'package:mustang_dashboard/model/car_model.dart';
 
 class CarDetail extends AnimatedWidget {
   final AnimationController slideController;
   final Animation fadeAnimation;
+  final Car car;
 
-  CarDetail({this.fadeAnimation, this.slideController}) : super(listenable: slideController);
+  CarDetail({@required this.car, this.fadeAnimation, this.slideController})
+      : super(listenable: slideController);
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +31,7 @@ class CarDetail extends AnimatedWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      '3407.5 Km',
+                      car.mileage.toStringAsFixed(2)+'Km',
                       style: Theme.of(context)
                           .textTheme
                           .subtitle1
@@ -68,7 +70,7 @@ class CarDetail extends AnimatedWidget {
                     decoration: BoxDecoration(
                         image: DecorationImage(
                             fit: BoxFit.cover,
-                            image: AssetImage("assets/image/MustangCar.png"))),
+                            image: AssetImage(car.imageUrl))),
                   ),
                 ),
               ),
@@ -79,12 +81,12 @@ class CarDetail extends AnimatedWidget {
             child: Padding(
               padding: EdgeInsets.only(left: kDefaultPadding),
               child: FadeTransition(
-                opacity:fadeAnimation,
+                opacity: fadeAnimation,
                 child: SlideTransition(
                   position: slideController.drive(
                       Tween<Offset>(begin: Offset(0, -0.2), end: Offset.zero)),
                   child: Text(
-                    'MUSTANG 5.0',
+                    car.model,
                     style: Theme.of(context)
                         .textTheme
                         .subtitle1

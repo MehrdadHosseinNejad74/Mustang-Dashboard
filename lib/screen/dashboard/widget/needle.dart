@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:mustang_dashboard/constant.dart';
+import 'package:mustang_dashboard/constant/constant.dart';
 
 class Needle extends AnimatedWidget {
   final AnimationController gaugeAnimationController;

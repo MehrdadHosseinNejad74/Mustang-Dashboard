@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../../../constant.dart';
+import 'package:mustang_dashboard/constant/constant.dart';
 class RegisterText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

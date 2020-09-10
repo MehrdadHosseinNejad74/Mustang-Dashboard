@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:mustang_dashboard/model/car_model.dart';
 import 'package:mustang_dashboard/screen/dashboard/widget/gauge.dart';
 
 import 'engine_check.dart';
@@ -10,9 +11,11 @@ class EngineDetail extends AnimatedWidget {
   final AnimationController engineFadeController;
   final AnimationController oilFadeController;
   final AnimationController tempFadeController;
+  final Car car;
 
   EngineDetail(
-      {this.slideController,
+      {this.car,
+      this.slideController,
       this.gaugeAnimationController,
       this.fadeAnimation,
       this.engineFadeController,
@@ -22,10 +25,10 @@ class EngineDetail extends AnimatedWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return Row(
       children: [
         EngineCheck(
+            car: car,
             fadeAnimation: fadeAnimation,
             slideController: slideController,
             engineFadeController: engineFadeController,

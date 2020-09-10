@@ -1,4 +1,7 @@
 import 'package:flutter/cupertino.dart';
+import 'package:mustang_dashboard/enums/EngineComponents.dart';
+import 'package:mustang_dashboard/model/car_model.dart';
+import 'package:mustang_dashboard/model/engine_model.dart';
 
 import 'dashboard_detail.dart';
 
@@ -10,6 +13,7 @@ class EngineCheck extends StatelessWidget {
     @required this.engineFadeController,
     @required this.oilFadeController,
     @required this.tempFadeController,
+    this.car,
   }) : super(key: key);
 
   final Animation fadeAnimation;
@@ -17,6 +21,7 @@ class EngineCheck extends StatelessWidget {
   final AnimationController engineFadeController;
   final AnimationController oilFadeController;
   final AnimationController tempFadeController;
+  final Car car;
 
   @override
   Widget build(BuildContext context) {
@@ -34,30 +39,39 @@ class EngineCheck extends StatelessWidget {
               children: [
                 DashboardDetail(
                   controller: engineFadeController,
-                  checked: false,
-                  componentName: 'Engine',
-                  imageAddress: 'assets/icon/Engine.svg',
-                  status: 'OK',
+                  checked: car.engineModel[EngineComponent.ENGINE].status ==
+                          Status.OK
+                      ? false
+                      : true,
+                  name: car.engineModel[EngineComponent.ENGINE].name,
+                  imageUrl: car.engineModel[EngineComponent.ENGINE].imageUrl,
+                  status: car.engineModel[EngineComponent.ENGINE].status.name,
                 ),
                 SizedBox(
                   height: 10,
                 ),
                 DashboardDetail(
                   controller: oilFadeController,
-                  checked: true,
-                  componentName: 'Oil',
-                  imageAddress: 'assets/icon/Oil.svg',
-                  status: 'Change',
+                  checked:
+                      car.engineModel[EngineComponent.OIL].status == Status.OK
+                          ? false
+                          : true,
+                  name: car.engineModel[EngineComponent.OIL].name,
+                  imageUrl: car.engineModel[EngineComponent.OIL].imageUrl,
+                  status: car.engineModel[EngineComponent.OIL].status.name,
                 ),
                 SizedBox(
                   height: 10,
                 ),
                 DashboardDetail(
                   controller: tempFadeController,
-                  checked: false,
-                  componentName: 'Avg. temperature',
-                  imageAddress: 'assets/icon/Temp.svg',
-                  status: 'OK',
+                  checked:
+                      car.engineModel[EngineComponent.TEMP].status == Status.OK
+                          ? false
+                          : true,
+                  name: car.engineModel[EngineComponent.TEMP].name,
+                  imageUrl: car.engineModel[EngineComponent.TEMP].imageUrl,
+                  status: car.engineModel[EngineComponent.TEMP].status.name,
                 )
               ],
             ),

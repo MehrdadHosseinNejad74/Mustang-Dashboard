@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mustang_dashboard/constant.dart';
+import 'package:mustang_dashboard/constant/constant.dart';
 
 class RememberCheckBox extends StatefulWidget {
   @override

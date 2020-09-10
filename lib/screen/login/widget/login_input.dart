@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-import '../../../constant.dart';
+import 'package:mustang_dashboard/constant/constant.dart';
 import 'input_box.dart';
 
 class LoginInput extends StatelessWidget {

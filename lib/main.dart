@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mustang_dashboard/constant.dart';
 import 'package:mustang_dashboard/screen/login/screen/login_screen.dart';
+
+import 'constant/constant.dart';
+
+/// @author : Mehrdad HosseinNejad
+/// Email : hosseinnejad74@gmail.com
+/// Project : Mustang Dashboard
 
 void main() {
   runApp(MyApp());

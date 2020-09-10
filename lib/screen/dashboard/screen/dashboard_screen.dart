@@ -1,12 +1,18 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:mustang_dashboard/constant.dart';
+import 'package:mustang_dashboard/constant/constant.dart';
+import 'package:mustang_dashboard/model/car_model.dart';
 import 'package:mustang_dashboard/screen/dashboard/widget/LockedButton.dart';
 import 'package:mustang_dashboard/screen/dashboard/widget/car_detail.dart';
 import 'package:mustang_dashboard/screen/dashboard/widget/engine_detail.dart';
 
 class Dashboard extends StatefulWidget {
+
+  final Car car;
+
+  const Dashboard({Key key, @required this.car}) : super(key: key);
+
   @override
   _DashboardState createState() => _DashboardState();
 }
@@ -94,7 +100,7 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
         child: Column(
           children: [
             //Km, Image, Traveled...
-            CarDetail(
+            CarDetail(car: widget.car,
                 fadeAnimation: _fadeAnimation,
                 slideController: _slideController),
             //Needle, Engine, ...
@@ -104,6 +110,7 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                 tempFadeController: _tempFadeController,
                 gaugeAnimationController: _gaugeAnimationController,
                 fadeAnimation: _fadeAnimation,
+                car: widget.car,
                 slideController: _slideController),
             LockedButton(
               fadeAnimation: _fadeAnimation,
@@ -114,7 +121,6 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
       ),
     );
   }
-
 
   AppBar _buildAppBar(BuildContext context, Size size) {
     return AppBar(
