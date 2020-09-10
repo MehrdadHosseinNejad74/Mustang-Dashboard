@@ -1,27 +1,22 @@
 ## Mustang Dashboard
 
-A beautiful mustang dashboard that consists of two pages (routs).
+A beautiful mustang dashboard that consists of two pages (route).
 * Login Page :
-    * header : beautiful cover image with  ShaderMask
-    * form : login forms and start key with sound effect
+    * header: beautiful cover image with  ShaderMask
+    * form: login forms and start key with sound effect
 
 * Dashboard Page
-     * Car specification : mileage, car model, car Image...
-     * Engine status : animated engine components with their status (check, ok)
-     * Fuel status : fuel gauge with animated needle
+     * Car specification: mileage, car model, car Image...
+     * Engine status: animated engine components with their status (check, ok)
+     * Fuel status: fuel gauge with an animated needle
 
-<!-- USAGE EXAMPLES -->
-## Usage
+## App Design
 ![App Design](https://github.com/MehrdadHosseinNejad74/Mustang-Dashboard/blob/master/assets/concept/concept.png)
 
-
-### Packages
+## Packages
  *  [google_fonts: ^1.1.0](https://pub.dev/packages/google_fonts/install)
  *  [flutter_svg: ^0.18.1](https://pub.dev/packages/flutter_svg/install)
 
-
-
-<!-- CONTRIBUTING -->
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
