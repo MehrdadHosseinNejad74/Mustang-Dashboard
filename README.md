@@ -1,7 +1,7 @@
 ## Mustang Dashboard
 
 A beautiful mustang dashboard that consists of two pages (route).
-* Login Page :
+* Login Page
     * header: beautiful cover image with  ShaderMask
     * form: login forms and start key with sound effect
 
