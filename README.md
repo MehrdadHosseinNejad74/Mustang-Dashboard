@@ -12,7 +12,7 @@ A beautiful mustang dashboard that consists of two pages (routs).
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-![App Design]((https://github.com/MehrdadHosseinNejad74/animated-button/blob/master/assets/concept/login.png))
+![App Design]((https://github.com/MehrdadHosseinNejad74/Mustang-Dashboard/blob/master/assets/concept/login.png))
 
 
 ### Packages
