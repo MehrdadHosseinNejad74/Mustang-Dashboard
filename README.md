@@ -22,6 +22,7 @@ A beautiful mustang dashboard that consists of two pages (route).
 ## Packages
  *  [google_fonts: ^1.1.0](https://pub.dev/packages/google_fonts/install)
  *  [flutter_svg: ^0.18.1](https://pub.dev/packages/flutter_svg/install)
+*   [audioplayers: ^0.15.1](https://pub.dev/packages/audioplayers/install)
 
 ## Contributing
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
